@@ -132,7 +132,7 @@ class AsyncExecutor:
 
 def add_mega_download(mega_link: str, path: str, listener, name: str):
     executor = AsyncExecutor()
-    api = MegaApi(MEGA_API_KEY, None, None, 'mirror-leech-telegram-bot')
+    api = MegaApi(MEGA_API_KEY, None, None, 'Super Drive Clone Bot')
     folder_api = None
     mega_listener = MegaAppListener(executor.continue_event, listener)
     api.addListener(mega_listener)
